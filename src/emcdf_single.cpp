@@ -35,7 +35,7 @@ NumericVector single_m(NumericMatrix& data, const NumericMatrix& a){
 }
 
 // [[Rcpp::export]]
-int single(NumericMatrix& data, const NumericVector& a){
+int single_v(NumericMatrix& data, const NumericVector& a){
   int n = data.nrow();
   int k = data.ncol();
 

@@ -25,8 +25,8 @@ single_m <- function(data, a) {
     .Call('Emcdf_single_m', PACKAGE = 'Emcdf', data, a)
 }
 
-single <- function(data, a) {
-    .Call('Emcdf_single', PACKAGE = 'Emcdf', data, a)
+single_v <- function(data, a) {
+    .Call('Emcdf_single_v', PACKAGE = 'Emcdf', data, a)
 }
 
 single1_m <- function(data, a) {

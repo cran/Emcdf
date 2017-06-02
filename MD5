@@ -1,9 +1,9 @@
-b651f1cd97f91309eec563b23a42a86d *DESCRIPTION
+4f5b363e3c0e0da38c56909320150e79 *DESCRIPTION
 5ea53617f0a4a3191cd8a283bde74e55 *NAMESPACE
-49b35bb055f8bdcf08e972a4495e2374 *R/RcppExports.R
+a60f9d0197d44089697fc620d8d87e45 *R/RcppExports.R
 9662526b1514f511cd1ff4e6bbd2ad37 *R/biEmcdf.R
 c3d0a474bf1d643231c916d22296d568 *R/coreNum.R
-736474bae0ec3ccce8f05518b8ebbe21 *R/emcdf.R
+89589a9e783744fb6b20ef6d9a87aa21 *R/emcdf.R
 82bf2555972f99c285cbb198d917a67e *R/emcdf_obj.R
 f8b3c7ed464cedbc73d5e63dc9133384 *R/initF.R
 f3b2ad1ef2706f905611cb846e1d01ca *R/plotcdf.R
@@ -13,7 +13,7 @@ aa0d8aa60834c3ec8f4de6e8ce30c1cf *man/emcdf.Rd
 b4faa43f0418c0ea61b996508acfcbe0 *man/initF.Rd
 a2bbcf9cf62323fef49204c554242114 *man/plotcdf.Rd
 e7d89d6b4928a8ea2956620ccaa3ca9c *src/Matrix.h
-19fee3fc6cae62ec4d7c4f8317025332 *src/RcppExports.cpp
+ec29aaea15310c61143e5eb49ebf5035 *src/RcppExports.cpp
 20c5741e4dc26494c91af3d5d45f2d8c *src/Sort.cpp
 29183acbde6aaafaad70af16b5d922e7 *src/Sort.h
 f665fbfcddc882246a1ddd3e2bf2ac5d *src/biEmcdf.cpp
@@ -22,6 +22,6 @@ f665fbfcddc882246a1ddd3e2bf2ac5d *src/biEmcdf.cpp
 4abc6d62f8d3f46b18430bda59bebe91 *src/emcdf.cpp
 6ea989feb92a31d92f5bea94fcdb45df *src/emcdf.h
 a454d7d5f718b9a0df4c2512239dc789 *src/emcdf_output.cpp
-bf6ff1cbfa4d53d63d7803a08865f230 *src/emcdf_single.cpp
+5037ced94d9d9738cf43b9a038df361f *src/emcdf_single.cpp
 2efb5e5db39f779b495109ca73419335 *src/func.h
 df573b0ca8162d14bf9b54de52a6fec4 *src/registerDynamicSymbol.cpp

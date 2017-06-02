@@ -90,7 +90,7 @@ emcdf = function(data, a){
         return (single5(data, a)/n)
       #...
       else
-        return (single(data, a)/n)
+        return (single_v(data, a)/n)
     }
 
     else{

@@ -76,15 +76,15 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
-// single
-int single(NumericMatrix& data, const NumericVector& a);
-RcppExport SEXP Emcdf_single(SEXP dataSEXP, SEXP aSEXP) {
+// single_v
+int single_v(NumericMatrix& data, const NumericVector& a);
+RcppExport SEXP Emcdf_single_v(SEXP dataSEXP, SEXP aSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< NumericMatrix& >::type data(dataSEXP);
     Rcpp::traits::input_parameter< const NumericVector& >::type a(aSEXP);
-    rcpp_result_gen = Rcpp::wrap(single(data, a));
+    rcpp_result_gen = Rcpp::wrap(single_v(data, a));
     return rcpp_result_gen;
 END_RCPP
 }
