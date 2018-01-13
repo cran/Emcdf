@@ -220,3 +220,30 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+
+static const R_CallMethodDef CallEntries[] = {
+    {"Emcdf_getCoreNum", (DL_FUNC) &Emcdf_getCoreNum, 0},
+    {"Emcdf_build", (DL_FUNC) &Emcdf_build, 2},
+    {"Emcdf_compute", (DL_FUNC) &Emcdf_compute, 2},
+    {"Emcdf_compute_m", (DL_FUNC) &Emcdf_compute_m, 2},
+    {"Emcdf_biemcdf_output", (DL_FUNC) &Emcdf_biemcdf_output, 3},
+    {"Emcdf_single_m", (DL_FUNC) &Emcdf_single_m, 2},
+    {"Emcdf_single_v", (DL_FUNC) &Emcdf_single_v, 2},
+    {"Emcdf_single1_m", (DL_FUNC) &Emcdf_single1_m, 2},
+    {"Emcdf_single1", (DL_FUNC) &Emcdf_single1, 2},
+    {"Emcdf_single2_m", (DL_FUNC) &Emcdf_single2_m, 2},
+    {"Emcdf_single2", (DL_FUNC) &Emcdf_single2, 2},
+    {"Emcdf_single3_m", (DL_FUNC) &Emcdf_single3_m, 2},
+    {"Emcdf_single3", (DL_FUNC) &Emcdf_single3, 2},
+    {"Emcdf_single4_m", (DL_FUNC) &Emcdf_single4_m, 2},
+    {"Emcdf_single4", (DL_FUNC) &Emcdf_single4, 2},
+    {"Emcdf_single5_m", (DL_FUNC) &Emcdf_single5_m, 2},
+    {"Emcdf_single5", (DL_FUNC) &Emcdf_single5, 2},
+    {"Emcdf_SortByX", (DL_FUNC) &Emcdf_SortByX, 2},
+    {NULL, NULL, 0}
+};
+
+RcppExport void R_init_Emcdf(DllInfo *dll) {
+    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
+    R_useDynamicSymbols(dll, FALSE);
+}

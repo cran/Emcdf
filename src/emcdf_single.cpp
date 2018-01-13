@@ -19,7 +19,7 @@ NumericVector single_m(NumericMatrix& data, const NumericMatrix& a){
     for(int i=0; i<n; ++i){
       flag = true;
        for(int j=0; j<k; ++j){
-        if(x[j][i] > a[j, c]){
+        if(x[j][i] > a.at(c,j)){
           flag = false;
           break;
         }
@@ -71,7 +71,7 @@ NumericVector single1_m(const NumericMatrix& data, const NumericMatrix& a){
     const NumericMatrix::ConstColumn x1 = data(_,0);
 
     for(int i=0; i<n; ++i)
-      if(x1[i] <= a[0,c])
+      if(x1[i] <= a.at(c,0))
         ++sum[c];
 
   }
@@ -94,17 +94,17 @@ int single1(const NumericMatrix& data, const NumericVector& a){
 // [[Rcpp::export]]
 NumericVector single2_m(const NumericMatrix& data, const NumericMatrix& a){
   NumericVector sum(a.nrow());
+
   for(int c=0; c<a.nrow(); ++c){
     int n = data.nrow();
     const NumericMatrix::ConstColumn x1 = data(_,0);
     const NumericMatrix::ConstColumn x2 = data(_,1);
 
     for(int i=0; i<n; ++i)
-      if(x1[i] <= a[0,c] && x2[i] <= a[1,c])
+      if(x1[i] <= a.at(c,0) && x2[i] <= a.at(c,1))
         ++sum[c];
 
   }
-
   return sum;
 }
 
@@ -133,7 +133,7 @@ NumericVector single3_m(const NumericMatrix& data, const NumericMatrix& a){
     const NumericMatrix::ConstColumn x3 = data(_,2);
 
     for(int i=0; i<n; ++i)
-      if(x1[i] <= a[0,c] && x2[i] <= a[1,c] && x3[i] <= a[2,c])
+      if(x1[i] <= a.at(c,0) && x2[i] <= a.at(c,1) && x3[i] <= a.at(c,2))
         ++sum[c];
 
   }
@@ -168,7 +168,7 @@ NumericVector single4_m(const NumericMatrix& data, const NumericMatrix& a){
     const NumericMatrix::ConstColumn x4 = data(_,3);
 
     for(int i=0; i<n; ++i)
-      if(x1[i] <= a[0,c] && x2[i] <= a[1,c] && x3[i] <= a[2,c] && x4[i] <= a[3,c])
+      if(x1[i] <= a.at(c,0) && x2[i] <= a.at(c,1) && x3[i] <= a.at(c,2) && x4[i] <= a.at(c,3))
         ++sum[c];
 
   }
@@ -204,7 +204,7 @@ NumericVector single5_m(const NumericMatrix& data, const NumericMatrix& a){
     const NumericMatrix::ConstColumn x5 = data(_,4);
 
     for(int i=0; i<n; ++i)
-      if(x1[i] <= a[0,c] && x2[i] <= a[1,c] && x3[i] <= a[2,c] && x4[i] <= a[3,c] && x5[i] <= a[4,c])
+      if(x1[i] <= a.at(c,0) && x2[i] <= a.at(c,1) && x3[i] <= a.at(c,2) && x4[i] <= a.at(c,3) && x5[i] <= a.at(c,4))
         ++sum[c];
 
   }

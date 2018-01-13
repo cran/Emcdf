@@ -5,7 +5,7 @@ using namespace std;
 
 class myMatrix{
 public:
-  explicit myMatrix(int n, int m): numrow(n), numcol(m){
+  explicit myMatrix(int n, int m): numcol(m), numrow(n){
     col = new vector<vector<double>>(numcol);
     for(int i=0; i<numcol; ++i)
       col->at(i) = vector<double>(numrow);
